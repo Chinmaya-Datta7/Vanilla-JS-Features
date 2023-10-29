@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+.game-container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000; /* Initial color */
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#shape {
+  transition: 0.5s;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: white;
+}
+.square {
+  height: 120px;
+  width: 120px;
+  background-color: white;
+}
+
+.rectangle {
+  height: 40px;
+  width: 120px;
+  background-color: white;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+}
