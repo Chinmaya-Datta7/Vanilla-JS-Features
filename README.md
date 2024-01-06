@@ -1,2 +1,2 @@
-# Vanilla-Js-Features
+# Vanilla-Js-MiniProjects
 Created with CodeSandbox
