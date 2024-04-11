@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stocksDetails {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.chart {
+  flex: 0.8;
+}
+
+#timeButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+#timeButtons button,
+#stockButtons button {
+  border: none;
+  border-radius: 999px;
+  background-color: #1e9ff5;
+  color: white;
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.25rem;
+}
+
+#timeButtons button:hover,
+#stockButtons button:hover {
+  background-color: #0061a1;
+}
+
+#stockButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#stockButtons div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bookValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#summaryHeader {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#summaryProfitValue,
+#summaryBookValue {
+  font-size: 1.25rem;
+}
+
+#summary {
+  font-size: 20px;
+}
+
+.dark-mode {
+  background-color: #181a1b;
+  color: white;
+}
+
+#darkText {
+  position: absolute;
+  top: 1.25rem;
+  right: 6.5rem;
+  font-size: 1.25rem;
+}
+
+/* Toggle switch styles */
+.switch {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  /* display: inline-block; */
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #1e9ff5;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Icon styles */
+.switch .slider i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+#myChart {
+  padding: 0 1rem;
+  /* background-color: #1d2022; */
+}
